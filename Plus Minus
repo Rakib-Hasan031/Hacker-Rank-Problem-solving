@@ -1,0 +1,61 @@
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the plusMinus function below.
+def plusMinus(arr):
+    pos=0
+    neg=0
+    neu=0
+    for i in range(n):
+        if (arr[i]>0):
+            pos+=1
+        elif (arr[i]<0):
+            neg+=1
+        elif (arr[i]==0):
+            neu+=1
+    print(pos/n)
+    print(neg/n)
+    print(neu/n)
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)
+
+
+
+
+#Another way:
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the plusMinus function below.
+def plusMinus(arr):
+    pos=0
+    neg=0
+    neu=0
+    for i in range(n):
+        if (arr[i]>0):
+            pos+=1
+        elif (arr[i]<0):
+            neg+=1
+        elif (arr[i]==0):
+            neu+=1
+    return (pos/n),(neg/n),(neu/n)
+        
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().rstrip().split()))
+
+    result=plusMinus(arr)
+    print(result)
