@@ -10,13 +10,19 @@ def miniMaxSum(arr):
     y=min(arr)
     arr1=0
     arr2=0
+    sum=0
+#    for i in range(len(arr)):
+#        if (arr[i]<x):
+#            arr2+=arr[i]
+#    for i in range(len(arr)):
+#        if(arr[i]>y):
+#            arr1+=arr[i]
     for i in range(len(arr)):
-        if (arr[i]<x):
-            arr2+=arr[i]
-    for i in range(len(arr)):
-        if(arr[i]>y):
-            arr1+=arr[i]
-    print(arr2, arr1)
+        if (arr[i]==arr[i]):
+            sum+=arr[i]
+    print(sum-max(arr),sum-min(arr))
+        
+    #print(arr2, arr1)
     
 if __name__=='__main__':
     arr=list(map(int,input().rstrip().split()))
